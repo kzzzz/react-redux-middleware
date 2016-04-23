@@ -11,16 +11,20 @@ class Users extends React.Component {
 
     renderUser(user) {
         return (
-            <li key={user.id}>
-                <span>{user.name}</span>
-            </li>)
+            <div key={user.id}>
+                <h4>{user.name}</h4>
+                <p>{user.company.name}</p>
+                <p>Something else</p>
+            </div>)
     }
 
     render() {
         return (
-            <ul>
-                {this.props.users.map(this.renderUser)}
-            </ul>)
+            <div className="well well-lg">
+                <div className="">
+                    {this.props.users.map(this.renderUser)}
+                </div>
+            </div>)
 
     }
 }

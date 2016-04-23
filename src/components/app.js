@@ -5,10 +5,9 @@ import Users from './Users.jsx';
 export default class App extends Component {
     render() {
         return (
-            <div>React simple starter
-                <div>
-                    <Users />
-                </div>
+            <div className="container">
+                <h1>Users</h1>
+                <Users />
             </div>
         );
     }
